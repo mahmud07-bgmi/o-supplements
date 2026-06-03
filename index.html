@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Supplements | Premium Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="O Supplements Logo" />
+      <div><strong>O Supplements</strong><span>100% Authentic</span></div>
+    </div>
+    <input id="search" onkeyup="searchProducts()" placeholder="Search protein, creatine, pre workout..." />
+    <button class="cart-btn" onclick="toggleCart()">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <span class="tag">India's Premium Fitness Store</span>
+      <h1>Build Muscle.<br>Boost Performance.</h1>
+      <p>Protein, Creatine, Pre-workout and fitness essentials at best prices.</p>
+      <a href="#products">Shop Now</a>
+    </div>
+    <div class="hero-card">
+      <img src="assets/mb-whey.jpg" alt="Whey Protein" />
+      <div><b>Deal of the Day</b><br><span>Up to 35% OFF</span></div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div>✅ Authentic Products</div>
+    <div>🚚 Fast Delivery</div>
+    <div>💬 WhatsApp Order</div>
+    <div>⭐ Premium Brands</div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="section-title">
+      <h2>Best Sellers</h2>
+      <p>Amazon-style premium product cards</p>
+    </div>
+
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <aside class="cart" id="cartBox">
+    <div class="cart-head">
+      <h2>Your Cart</h2>
+      <button onclick="toggleCart()">×</button>
+    </div>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button class="whatsapp" onclick="orderWhatsApp()">Order on WhatsApp</button>
+  </aside>
+
+  <footer>
+    <h3>O Supplements</h3>
+    <p>Instagram: @o_supplements__</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
